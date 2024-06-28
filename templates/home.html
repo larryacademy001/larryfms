@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}ASHPense | Home {% endblock title %}
+
+{% block content %}
+
+<section>
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+    </div>
+</section>
+
+<!-- NEW TRANSACTION BUTTONS -->
+<section class="pb-3">
+    <div class="container my-3 px-3 py-3">
+        <div class="row">
+            <div class="col col-md-3 col-lg-3 col-sm-3 border border-dark py-2 mx-2 rounded-3 text-center">
+                <a href="#" class="text-decoration-none text-dark h4">
+                    <img src="{% static 'icons/new_income.svg' %}" alt="new income icon">
+                    Income
+                </a>
+            </div>
+            <div class="col col-md-3 col-lg-3 col-sm-3 border border-dark mx-2 py-2 rounded-3 text-center">
+                <a href="#" class="text-decoration-none text-dark h4">
+                    <img src="{% static 'icons/new_expense.svg' %}" alt="new income icon">
+                    Expense
+                </a>
+            </div>
+            <div class="col col-md-3 col-lg-3 col-sm-3 border border-dark mx-2 py-2 rounded-3 text-center">
+                <a href="#" class="text-decoration-none text-dark h4">
+                    <img src="{% static 'icons/new_budget.svg' %}" alt="new income icon">
+                    Budget
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SUMMARY SECTION WITH BUTTONS -->
+<section>
+    <h4>Summary of _month_ Transactions<h4>
+    <div class="container my-3 px-3 pb-5">
+        <div class="row">
+            <div class="col col-lg-3 col-md-3 col-sm-3">
+                <div class="row h5">
+                    Income:
+                </div>
+                <div class="row h5">
+                    Expense:
+                </div>
+                <div class="row h5">
+                    Balance:
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-3 col-sm-3">
+                <div class="row h5">
+                    XXXXX
+                </div>
+                <div class="row h5">
+                    XXXXX
+                </div>
+                <div class="row h5">
+                    XXXXX
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TABULAR LIST OF TRANSACTIONS -->
+<section>
+    <h4>List of _month_ Transactions</h4>
+    <div class="container my-3 px-3 pb-5">
+        <div class="table-responsive">
+            <table class="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Payee</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Payment Method</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1,001</td>
+                    <td>20-06-2024</td>
+                    <td>Provision Shop</td>
+                    <td>Food</td>
+                    <td>Cash</td>
+                    <td>25.90</td>
+                    <td>Purchased groceries</td>
+                </tr>
+                <tr>
+                    <td>1,002</td>
+                    <td>20-06-2024</td>
+                    <td>Provision Shop</td>
+                    <td>Food</td>
+                    <td>Cash</td>
+                    <td>25.90</td>
+                    <td>Purchased groceries</td>
+                </tr>
+                <tr>
+                    <td>1,003</td>
+                    <td>20-06-2024</td>
+                    <td>Provision Shop</td>
+                    <td>Food</td>
+                    <td>Cash</td>
+                    <td>25.90</td>
+                    <td>Purchased groceries</td>
+                </tr>
+                <tr>
+                    <td>1,003</td>
+                    <td>20-06-2024</td>
+                    <td>Provision Shop</td>
+                    <td>Food</td>
+                    <td>Cash</td>
+                    <td>25.90</td>
+                    <td>Purchased groceries</td>
+                </tr>
+                <tr>
+                    <td>1,004</td>
+                    <td>20-06-2024</td>
+                    <td>Provision Shop</td>
+                    <td>Food</td>
+                    <td>Cash</td>
+                    <td>25.90</td>
+                    <td>Purchased groceries</td>
+                </tr>
+                <tr>
+                    <td>1,005</td>
+                    <td>20-06-2024</td>
+                    <td>Provision Shop</td>
+                    <td>Food</td>
+                    <td>Cash</td>
+                    <td>25.90</td>
+                    <td>Purchased groceries</td>
+                </tr>
+                <tr>
+                    <td>1,006</td>
+                    <td>20-06-2024</td>
+                    <td>Provision Shop</td>
+                    <td>Food</td>
+                    <td>Cash</td>
+                    <td>25.90</td>
+                    <td>Purchased groceries</td>
+                </tr>
+                <tr>
+                    <td>1,007</td>
+                    <td>20-06-2024</td>
+                    <td>Provision Shop</td>
+                    <td>Food</td>
+                    <td>Cash</td>
+                    <td>25.90</td>
+                    <td>Purchased groceries</td>
+                </tr>
+                <tr>
+                    <td>1,008</td>
+                    <td>20-06-2024</td>
+                    <td>Provision Shop</td>
+                    <td>Food</td>
+                    <td>Cash</td>
+                    <td>25.90</td>
+                    <td>Purchased groceries</td>
+                </tr>
+                <tr>
+                    <td>1,009</td>
+                    <td>20-06-2024</td>
+                    <td>Provision Shop</td>
+                    <td>Food</td>
+                    <td>Cash</td>
+                    <td>25.90</td>
+                    <td>Purchased groceries</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- SUMMARY SECTION LINE CHART -->
+<section>
+    <div class="container my-3 px-3 pb-5">
+        <h4>Line Graph for _month_ Transactions</h4>
+        <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+    </div>
+</section>
+
+<!-- TO BE REMOVED -->
+<section>
+    <p>
+        Welcome <b>{{ user.username }}!</b> to <strong>APM Dahsboard</strong>
+    </p>
+    <p>
+        Update your password | 
+        <a href="{% url 'pass_change' %}" class="text-decoration-none">Change password</a>
+    </p>
+</section>
+{% endblock content %}

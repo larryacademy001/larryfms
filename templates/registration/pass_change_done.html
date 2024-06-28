@@ -1,0 +1,19 @@
+{% extends "auth_base.html" %}
+
+{% block title %}ASHPense | Change Password Success{% endblock title %}
+
+{% block content %}
+<div class="card-body">
+    <h1 class="card-title text-primary text-center">
+        Success!
+    </h1>
+    <p class="card-text text-muted text-center">
+        Your password has been changed. 
+    </p>
+</div>
+<div class="text-center border-top border-radius-3">
+    <p class="mt-3 mb-3 text-muted ">
+        <a href="{% url 'login' %}" style="text-decoration: none;">Go home</a>
+    </p>
+</div>
+{% endblock content %}
